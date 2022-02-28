@@ -8,7 +8,6 @@
 <li>Jest</li>
 <li>Storybook</li>
 <li>PWA</li>
-<li>Styled Components</li>
 <li>Husky</li>
 <li>Lint-staged</li>
 <li>Eslint</li>
