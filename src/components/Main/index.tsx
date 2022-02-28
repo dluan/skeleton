@@ -1,17 +1,26 @@
-import * as S from './styles'
+import { Heading, Image, Text, VStack } from '@chakra-ui/react'
 
 const Main = ({
   title = 'Esqueleto de Next JS',
   description = 'TypeScript, ReactJS, NextJS, Styled Components e Chakra UI'
 }) => (
-  <S.Wrapper>
-    <S.Title>{title}</S.Title>
-    <S.Description>{description}</S.Description>
-    <S.Illustration
+  <VStack
+    bg={'#06092b'}
+    color="white"
+    w={'full'}
+    height="100vh"
+    p={12}
+    textAlign="center"
+    spacing={8}
+  >
+    <Heading as="h2">{title}</Heading>
+    <Text>{description}</Text>
+    <Image
       src="/img/hero-illustration.svg"
       alt="Um desenvolvedor de frente para uma tela com código."
+      boxSize={'30rem'}
     />
-  </S.Wrapper>
+  </VStack>
 )
 
 export default Main
